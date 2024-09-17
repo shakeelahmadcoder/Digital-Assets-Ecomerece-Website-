@@ -66,7 +66,7 @@ const NavShow = () => {
                         {/* right for categories  */}
                         <span className=' bg-white text-black rounded-l-full py-2 px-1 sm:px-0 md:px-4'>All Categories |</span>
                         {/* medium for search bar input  */}
-                        <form ><input className='py-2 md:px-8 sm:px-0  text-black' type="text" placeholder='Search here'/></form>
+                        <form ><input className='py-2 sm:px-4 px-0  text-black' type="text" placeholder='Search here'/></form>
                         {/* left for button  */}
                         <button className='bg-[#D10024] text-white rounded-r-full py-2 px-4'>Search</button>
             </div>
