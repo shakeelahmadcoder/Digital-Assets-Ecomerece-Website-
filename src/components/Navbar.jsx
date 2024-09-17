@@ -64,9 +64,9 @@ const NavShow = () => {
             {/* medium for search bar  */}
             <div className="search-bar flex text-sm  justify-center items-center my-5 md:my-0 ">
                         {/* right for categories  */}
-                        <span className=' bg-white text-black rounded-l-full py-2 px-1 sm:px-0 md:px-4'>All Categories |</span>
+                        <span className=' bg-white text-black rounded-l-full py-2  hidden sm:block sm:px-4 text-[10px]'>All Categories |</span>
                         {/* medium for search bar input  */}
-                        <form ><input className='py-2 sm:px-4 px-0  text-black' type="text" placeholder='Search here'/></form>
+                        <form ><input className='py-2 sm:px-4 px-2 rounded-l-full sm:rounded-none text-black ' type="text" placeholder='Search here'/></form>
                         {/* left for button  */}
                         <button className='bg-[#D10024] text-white rounded-r-full py-2 px-4'>Search</button>
             </div>
