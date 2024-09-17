@@ -64,9 +64,9 @@ const NavShow = () => {
             {/* medium for search bar  */}
             <div className="search-bar flex text-sm  justify-center items-center my-5 md:my-0 ">
                         {/* right for categories  */}
-                        <span className=' bg-white text-black rounded-l-full py-2  hidden sm:block sm:px-4 text-[10px]'>All Categories |</span>
+                        <span className=' bg-white text-black rounded-l-full py-2  hidden sm:block sm:px-4 '>All Categories |</span>
                         {/* medium for search bar input  */}
-                        <form ><input className='py-2 sm:px-4 px-2 rounded-l-full sm:rounded-none text-black ' type="text" placeholder='Search here'/></form>
+                        <form ><input className='py-2 sm:px-9 px-2  rounded-l-full sm:rounded-none text-black ' type="text" placeholder='Search here'/></form>
                         {/* left for button  */}
                         <button className='bg-[#D10024] text-white rounded-r-full py-2 px-4'>Search</button>
             </div>
@@ -125,6 +125,9 @@ const NavShow = () => {
     <div className="group">
     <Link to="/cameras" className=" relative"> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
+    <div className="group">
+    <Link to="/accessories" className=" relative"> Accessories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    </div>
     
     </div>
     {/* on mobile  */}
@@ -147,6 +150,9 @@ const NavShow = () => {
     </div>
     <div className="group">
     <Link to="/cameras" className=" relative"> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    </div>
+    <div className="group">
+    <Link to="/accessories" className=" relative"> Accessories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     
     </div>
