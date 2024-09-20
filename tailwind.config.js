@@ -1,3 +1,5 @@
+// import Slider from 'react-slick';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [

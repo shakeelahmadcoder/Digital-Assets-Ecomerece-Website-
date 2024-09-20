@@ -19,7 +19,7 @@ const NavShow = () => {
 };
 
   return (
-    <nav className='relative'>
+    <nav className='relative '>
         {/* top nav email and contact */}
         <div className="top-bar bg-[#1E1F29] md:flex   justify-between py-3 px-4 md:px-24 ">
                 {/* left for contact   */}
@@ -108,52 +108,48 @@ const NavShow = () => {
 {/* navigation menue  */}
         <div className=" hidden md:flex gap-8 px-4 md:px-24 py-4 bg-white shadow-md ">
     <div className="group">
-    <Link to="/" className=" relative"> Home<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/" className=" relative hover:text-[#D10024]"> Home<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/hotdeals" className=" relative"> Hot Deals<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/hotdeals" className=" relative hover:text-[#D10024]"> Hot Deals<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/categories" className=" relative"> Categories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/categories" className=" relative hover:text-[#D10024]"> Categories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/laptops" className=" relative"> Laptops<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/laptops" className=" relative hover:text-[#D10024]"> Laptops<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/smartphones" className=" relative"> Smpartphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/smartphones" className=" relative hover:text-[#D10024]"> Smpartphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/cameras" className=" relative"> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/cameras" className=" relative hover:text-[#D10024]"> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
-    <div className="group">
-    <Link to="/accessories" className=" relative"> Accessories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
-    </div>
+    
     
     </div>
     {/* on mobile  */}
     {showNav && 
-        <div className=" flex flex-col gap-8 px-4 md:px-24 py-4 bg-black text-white shadow-md absolute top-0 h-full">
+        <div className="lg:hidden flex flex-col gap-8 px-4 md:px-24 py-4 bg-black text-white shadow-md absolute top-0 h-full">
     <div className="group">
-    <Link to="/" className=" relative"> Home<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/" className=" relative hover:text-[#D10024]"> Home<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/hotdeals" className=" relative"> Hot Deals<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/hotdeals" className=" relative hover:text-[#D10024]"> Hot Deals<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/categories" className=" relative"> Categories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/categories" className=" relative hover:text-[#D10024]"> Categories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/laptops" className=" relative"> Laptops<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/laptops" className=" relative hover:text-[#D10024]"> Laptops<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/smartphones" className=" relative"> Smpartphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/smartphones" className=" relative hover:text-[#D10024]"> Smpartphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
     <div className="group">
-    <Link to="/cameras" className=" relative"> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
+    <Link to="/cameras" className=" relative hover:text-[#D10024]"> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
     </div>
-    <div className="group">
-    <Link to="/accessories" className=" relative"> Accessories<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span></Link>
-    </div>
+  
     
     </div>
     }
