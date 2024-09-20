@@ -9,6 +9,7 @@ import { Camera } from './components/Products/Camera'
 import Headphone from './components/Products/Headphone'
 import HotSelling from './components/HotSelling'
 import Footer from './components/Footer'
+import Categories from './components/Categories'
 
 const App = () => {
   return (
