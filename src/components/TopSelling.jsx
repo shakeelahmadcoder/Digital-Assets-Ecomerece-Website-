@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaCartShopping } from 'react-icons/fa6'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
 
 import laptop1 from "../assets/products/lap-1.png"
 import laptop2 from "../assets/products/lap-2.png"
@@ -43,6 +44,8 @@ const products = [
 ];
 
 const Product = () => {
+  const [selectedCategory, setselectedCategory] = useState("All")
+  const filteredProducts = selectedCategory === "All"? products: products.filter(product => product.category === selectedCategory)
   var settings = {
     dots: true,
     infinite: true,
@@ -93,20 +96,20 @@ const Product = () => {
 <div className="right">
     <ul className='sm:flex gap-5 '>
     <div className="group">
-      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer"> Laptops<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
+      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer" onClick={()=> {setselectedCategory("Laptop")}}> Laptops<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
       </div>
     </div>
     <div className="group">
-      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer"> Smartphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
+      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer" onClick={()=> {setselectedCategory("Smartphone")}}> Smartphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
       </div>
     </div>
     
     <div className="group">
-      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer"> Headphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
+      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer" onClick={()=> {setselectedCategory("Headphone")}}> Headphones<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
       </div>
     </div>
     <div className="group">
-      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer"> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
+      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer" onClick={()=> {setselectedCategory("Camera")}}> Cameras<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
       </div>
     </div>
 
@@ -117,7 +120,7 @@ const Product = () => {
 {/* products  */}
 <div className="products  my-10">
 <Slider {...settings}>
-{products.map((product, indext)=>(
+{filteredProducts.map((product, indext)=>(
     <div key={indext} className="product border  px-4 py-4">
         <div className="flex flex-col items-center justify-center">
         <img className='h-40 w-40 object-contain' src={product.img} alt="" />
