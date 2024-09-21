@@ -2,43 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body > div {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
 }
 
 .slick-slide > div {
     margin: 0 10px;
-  }
+}
 
-  /* .slick-prev::before, .slick-next::before {
-    color: red !important;
-    font-size: 30px !important;
-    padding: 4px !important;
-
-} */
-
-/* Add these styles to position arrows at the bottom with !important */
 .slick-prev, .slick-next {
-  bottom: -40px !important; /* Move the arrows to the bottom */
-  top: auto !important; /* Disable the default top alignment */
-  z-index: 1 !important;
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Optional: add a background for better visibility */
-  color: white !important;
-  border-radius: 50% !important; /* Optional: rounded arrows */
+    bottom: -40px !important;
+    top: auto !important;
+    z-index: 1 !important;
+    background-color: red !important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    /* font-size: 0px !important; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .slick-prev {
-  left: 100px !important;
+    left: 100px !important;
 }
 
 .slick-next {
-  right: 100px !important;
+    right: 100px !important;
 }
 
-/* Optional: You can adjust the size of the arrows for smaller screens */
 @media (max-width: 768px) {
-  .slick-prev, .slick-next {
-    font-size: 30px !important;
-  }
+    .slick-prev, .slick-next {
+        width: 40px !important;
+        height: 40px !important;
+        /* font-size: 20px !important; */
+    }
 }

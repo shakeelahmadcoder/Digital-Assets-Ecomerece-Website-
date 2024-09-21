@@ -50,7 +50,7 @@ const Product = () => {
     autoplay: true,
     autoplaySpeed: 3000, // Set autoplay speed to 3 seconds
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     arrows: true,
     responsive: [
       {
@@ -59,7 +59,7 @@ const Product = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows: true,
         }
       },
@@ -69,6 +69,7 @@ const Product = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           arrows: true,
+          dots: false,
         }
       },
       {
@@ -77,6 +78,7 @@ const Product = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
+          dots: false,
         }
       }
     ]

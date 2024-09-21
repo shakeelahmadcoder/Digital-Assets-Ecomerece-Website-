@@ -50,7 +50,7 @@ const Product = () => {
         autoplay: true,
         autoplaySpeed: 3000, // Set autoplay speed to 3 seconds
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
         arrows: true,
         responsive: [
           {
@@ -59,7 +59,7 @@ const Product = () => {
               slidesToShow: 3,
               slidesToScroll: 1,
               infinite: true,
-              dots: true,
+              dots: false,
               arrows: true,
             }
           },
@@ -69,6 +69,7 @@ const Product = () => {
               slidesToShow: 2,
               slidesToScroll: 1,
               arrows: true,
+              dots: false,
             }
           },
           {
@@ -77,6 +78,7 @@ const Product = () => {
               slidesToShow: 1,
               slidesToScroll: 1,
               arrows: true,
+              dots: false,
             }
           }
         ]
@@ -85,11 +87,11 @@ const Product = () => {
     <div className='products px-4 md:px-24  my-16'>
         {/* navigation bar  */}
 <nav className='md:flex md:justify-between gap-4 md:gap-0 justify-center items-center'>
-<div className="left">
+<div className="left ">
     <h1 className='text-2xl font-bold'>NEW PRODUCTS</h1>
 </div>
 <div className="right">
-    <ul className='sm:flex gap-5 '>
+    <ul className=' sm:flex gap-5 '>
     <div className="group">
       <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer"> Laptops<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
       </div>
