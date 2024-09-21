@@ -101,6 +101,10 @@ const Product = () => {
         </div>
         <div className="right">
           <ul className='sm:flex gap-5'>
+          <div className="group">
+      <div className=" relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer" onClick={()=> {setselectedCategory("All")}}> All<span className="absolute left-0 bottom-0 w-0 h-1 bg-[#D10024] transition-all top-5 duration-300 group-hover:w-full"></span>  
+      </div>
+    </div>
             <div className="group">
               <div className="relative font-bold text-gray-600 hover:text-[#D10024] cursor-pointer"
                 onClick={() => setSelectedCategory("Laptop")}> Laptops
