@@ -9,6 +9,7 @@ import Headphone from './components/Products/Headphone'
 import HotSelling from './components/HotSelling'
 import Footer from './components/Footer'
 import Categories from './components/Categories'
+import Cart from './components/Cart'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Route path='/cameras' element={<Camera/>}></Route>
       <Route path='/headphones' element={<Headphone/>}></Route>
       <Route path='/hotdeals' element={<HotSelling/>}></Route>
+      <Route path='/cart' element={<Cart/>}></Route>
       </Routes> 
       <Footer/>
      </BrowserRouter>
