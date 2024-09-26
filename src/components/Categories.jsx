@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const category = [
     {image: laptop, title: "Laptopes Collection", path: "/laptops"},
-    {image: headphone, title: "Headphones Collection", path: "/smartphones"},
+    {image: headphone, title: "Headphones Collection", path: "/headphones"},
     {image: camera, title: "Cameras Collection", path: "/cameras"},
 ]
 

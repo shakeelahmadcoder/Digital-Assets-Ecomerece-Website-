@@ -19,7 +19,7 @@ const Cart = () => {
               {/* Ensure the correct path to img, like item.img or item.product.img */}
               <img src={item.product.img} alt='product image' className='h-32 w-32 object-contain' />
               <p>{item.product.category}</p>
-                <p className='text-xl font-semibold '>{item.product.title.substring(0, 20)}</p>
+                <p className='text-xl font-semibold '>{item.product.title}</p>
                 <p className='text-[#D10024] font-bold'>${item.product.price * item.quantity}</p>
            {/* increament and decrement buttons  */}
            <div className='button flex'>
