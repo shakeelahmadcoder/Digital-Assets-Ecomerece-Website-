@@ -28,23 +28,24 @@ import { addToCart } from '../redux/cartSlice';
 
 // All products
 const allProducts = [
-  { img: laptop1, category: "Laptop", title: "Powerful Laptop for Coding and Gaming", price: "1200" },
-  { img: phon2, category: "Smartphone", title: "Perfect Smartphone for Photography Enthusiasts", price: "800" },
-  { img: head1, category: "Headphone", title: "Noise-Cancelling Headphones for Music Lovers", price: "150" },
-  { img: cam4, category: "Camera", title: "Ultra-Zoom Camera for Versatile Shooting", price: "2000" },
-  { img: laptop2, category: "Laptop", title: "High-Performance Laptop for Developers", price: "1100" },
-  { img: phon3, category: "Smartphone", title: "Smartphone with Amazing Camera and Battery", price: "900" },
-  { img: head2, category: "Headphone", title: "Comfortable Headphones for Long Listening", price: "200" },
-  { img: laptop3, category: "Laptop", title: "Ultra-light Laptop for Travel and Work", price: "1300" },
-  { img: phon1, category: "Smartphone", title: "Affordable Smartphone with High-Quality Display", price: "700" },
-  { img: cam3, category: "Camera", title: "Affordable Camera for Hobbyists", price: "800" },
-  { img: phon4, category: "Smartphone", title: "Flagship Smartphone with Best Performance", price: "1500" },
-  { img: head3, category: "Headphone", title: "Wireless Headphones with Deep Bass", price: "180" },
-  { img: cam2, category: "Camera", title: "Compact Camera with Advanced Features", price: "1500" },
-  { img: laptop4, category: "Laptop", title: "Gaming Laptop with RGB Keyboard and Graphics", price: "1400" },
-  { img: head4, category: "Headphone", title: "Bluetooth Headphones with Long Battery Life", price: "170" },
-  { img: cam1, category: "Camera", title: "High-Resolution Camera for Professional Photography", price: "2500" },
+  { id: 1, img: laptop1, category: "Laptop", title: "Powerful Laptop for Coding and Gaming", price: "1200" },
+  { id: 2, img: phon2, category: "Smartphone", title: "Perfect Smartphone for Photography Enthusiasts", price: "800" },
+  { id: 3, img: head1, category: "Headphone", title: "Noise-Cancelling Headphones for Music Lovers", price: "150" },
+  { id: 4, img: cam4, category: "Camera", title: "Ultra-Zoom Camera for Versatile Shooting", price: "2000" },
+  { id: 5, img: laptop2, category: "Laptop", title: "High-Performance Laptop for Developers", price: "1100" },
+  { id: 6, img: phon3, category: "Smartphone", title: "Smartphone with Amazing Camera and Battery", price: "900" },
+  { id: 7, img: head2, category: "Headphone", title: "Comfortable Headphones for Long Listening", price: "200" },
+  { id: 8, img: laptop3, category: "Laptop", title: "Ultra-light Laptop for Travel and Work", price: "1300" },
+  { id: 9, img: phon1, category: "Smartphone", title: "Affordable Smartphone with High-Quality Display", price: "700" },
+  { id: 10, img: cam3, category: "Camera", title: "Affordable Camera for Hobbyists", price: "800" },
+  { id: 11, img: phon4, category: "Smartphone", title: "Flagship Smartphone with Best Performance", price: "1500" },
+  { id: 12, img: head3, category: "Headphone", title: "Wireless Headphones with Deep Bass", price: "180" },
+  { id: 13, img: cam2, category: "Camera", title: "Compact Camera with Advanced Features", price: "1500" },
+  { id: 14, img: laptop4, category: "Laptop", title: "Gaming Laptop with RGB Keyboard and Graphics", price: "1400" },
+  { id: 15, img: head4, category: "Headphone", title: "Bluetooth Headphones with Long Battery Life", price: "170" },
+  { id: 16, img: cam1, category: "Camera", title: "High-Resolution Camera for Professional Photography", price: "2500" },
 ];
+
 
 const Product = () => {
   const dispatch = useDispatch()

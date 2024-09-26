@@ -80,7 +80,7 @@ const Navbar = () => {
           {/* addToCartIcon */}
           <div className='flex gap-4 flex-col items-center justify-center text-center'>
             <div className="icon relative text-center">
-              <Link to='cart'><FaCartShopping /></Link>
+              <Link to='cart'><FaCartShopping className='text-4xl font-bold'/></Link>
               <div className="h-2 w-2 rounded-full p-3 font-bold bg-[#D10024] text-white flex items-center justify-center text-sm absolute top-[-19px] right-[-24px]">{cartItems.length}</div>
             </div>
             <p className='text-sm'>Your Cart</p>
